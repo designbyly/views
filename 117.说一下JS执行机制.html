@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>说一下JS执行机制</h1>
+    <ol>
+        <li>从上到下执行所有同步代码</li>
+        <li>在执行的过程中遇到宏任务就放到宏任务队列中，遇到微任务就放到微任务队列中</li>
+        <li>当所有同步代码执行完毕之后，就执行微任务队列中满足需求所有回调</li>
+        <li>当微任务队列所有满足需求回调执行完毕之后，就执行宏任务队列中满足需求的所有回调</li>
+    </ol>
+</body>
+</html>

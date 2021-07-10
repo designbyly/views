@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>for in 和 for of 区别</h1>
+    <p>for in：循环返回的值都是数据结构的键值名</p>
+    <p>遍历对象返回的对象的key值</p>
+    <p>遍历数组返回的数组的下标（key）</p>
+    <p>循环不仅可以遍历数字键名，还会遍历原型上的值和手动添加的其他键</p>
+    <p>特别情况下，会以任意的顺序遍历键名</p>
+    <p>一句话：for in 循环适合遍历对象</p>
+    <br>
+    <p>for of循环：用来获取一对键值对中的值</p>
+    <p>一个数据结构只要部署了Symbol.iterator属性，就被视为具有接口，就可以使用for of循环</p>
+    <p>for of不同于foreach，可以与break，continue，return配合使用，也就是说for of循环可以退出循环</p>
+    
+</body>
+</html>

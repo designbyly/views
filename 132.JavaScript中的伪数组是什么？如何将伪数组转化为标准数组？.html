@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript中的伪数组是什么？如何将伪数组转化为标准数组？</h1>
+    <h2>伪数组（类数组）</h2>
+    <p>无法直接调用数组方法或期望length属性有什么特殊的行为但是仍然可以对真正的数组遍历方法来遍历他们。</p>
+    <p>典型的是函数的argument参数，还有像调用getElementByTagName，document，childNodes之类的，他们都返回NodeList对象都属于伪数组</p>
+<p>
+    可以使用Array.prototype.slice.call(fakeArray)将数组转换为真正的Array对象
+</p>
+</body>
+</html>

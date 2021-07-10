@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function AjaxRequest(type,url,isAsyn,param,callback){
+var xhr=createXhr()
+xhr.onreadystatechange=function(){
+    if((xhr.status==200||xhr.xhr.status==304)&&xhr.readyState==4){
+        var data=JSON.parse(xhr.responseText)
+        callback&&callback(data)
+    }
+}
+if(type.toLowerCase()=="get"){
+    url+='?'
+    for(var n in param){
+        url+=n+'='+param[n]+'&'
+    }
+    url=url.subStr(0,url.length-1)
+    param=null;
+}else{
+    param=JSON.stringify(param)
+}
+xhr.open(type,url,isAsyn)
+xhr.send()
+       }
+       AjaxRequest('get','https://suggest.taobao.com/sug?code=utf-8&q=%E5%8D%AB%E8%A1%A3&callback=cb',true)
+    </script>
+</body>
+</html>

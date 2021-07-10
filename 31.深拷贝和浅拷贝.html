@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>深拷贝和浅拷贝</h1>
+    <h2>浅拷贝</h2>
+    <ol>
+        <li>拷贝了对象的引用</li>
+        <li>当原对象发生变化的时候，拷贝对象也跟着变化</li>
+        <li>拷贝一层，深层次的对象级别的就拷贝引用</li>
+    </ol>
+    <h2>深拷贝</h2>
+    <ol>
+        <li>另外申请了一块内存</li>
+        <li>内容和原来对象一样</li>
+        <li>更改原对象，拷贝对象不会发生变化</li>
+        <li>拷贝多层，每一级别的数据都会拷贝出来</li>
+    </ol>
+    <h3>深拷贝方法</h3>
+    <ol><li>
+        obj1[key]=obj2[key]
+    </li>
+<li>
+    Object.assign({},obj)
+</li>
+<li>
+    Object.create(obj)
+</li>
+</ol>
+</body>
+</html>

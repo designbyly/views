@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>redux遵循的三个基本原则</h1>
+    <ol>
+        <li>单一事实来源</li>
+        <li>状态是一种可读的状态</li>
+        <li>通过纯函数进行修改</li>
+    </ol>
+    <h2>解释3个原则</h2>
+    <ol>
+        <li>
+            整个应用的状态存储在单个store中的对象，状态树里面，单一
+            状态树可以跟踪时间的变化，并且可以调试和检查应用程序
+        </li>
+        <li>
+            改变状态的唯一方法就是去触发一个动作。
+            动作就是描述变化的普通JavaScript对象
+            ，就和state是数据的最小表示一样，该操作是对数据更改的最小表现
+        </li>
+        <li>
+            为了指定状态树如何通过操作进行转换，需要使用纯函数。
+            纯函数就是那些返回值仅仅是取决于其参数值的函数
+        </li>
+    </ol>
+</body>
+</html>

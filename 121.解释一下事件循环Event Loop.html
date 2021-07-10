@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>解释一下Event Loop</h1>
+    <p>每当执行栈执行完一个任务，就会被弹出。</p>
+    <p>如果是异步任务，将会调用API</p>
+    执行完毕会放到任务队列
+    <p>事件循环会不断的检测执行栈是否为空</p>
+    <p>如果为空：则读取任务队列</p>
+    <p>将异步任务的回调事件放入执行栈中执行</p>
+    <p>如果不为空：则继续执行栈中的任务。</p>
+</body>
+</html>

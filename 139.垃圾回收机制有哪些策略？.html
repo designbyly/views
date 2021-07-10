@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>垃圾回收机制有哪些策略</h1>
+    <h2>标记清除法</h2>
+    <p>垃圾回收机制获取根并标记它，他们，然后访问并标记所有来自他们的引用，然后在访问这些对象并标记他们的引用，然后在</p>
+    <p>访问这些对象并标记他们的引用。。。。如此递进，结束后统计有没有标记的（不可达）然后删除</p>
+    进入执行环境的不能进行删除
+    <h2>引用计数法</h2>
+<p>
+    当声明一个变量并赋值给该变量赋值一个引用类型的值的时候，该值的值+1
+</p>
+<p>
+    当该值赋值给另一个变量的时候，该值的值+1
+</p>
+<p>
+    当该值被其他值取代，该值的值-1
+</p>
+<p>
+    当值变为0的时候，说明无法访问这个值，垃圾回收机制清除该对象
+</p>
+</body>
+</html>

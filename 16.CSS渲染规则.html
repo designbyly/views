@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS渲染规则</h1>
+    <h2>从上到下，从左到右</h2>
+    <p>渲染规则</p>
+    <p>
+首先好到所有C，沿着C的父元素查找B，然后顺着B查找A，
+    </p>
+    <p>
+        如果中间找到了符合匹配规则的节点就加入结果集合
+    </p>
+    <p>
+        如果找到根元素的html都还没有匹配到，这条路径就不再遍历了。
+    </p>
+    <p>
+        下一个A还是如此，直到没有A就继续查找。
+    </p>
+    <p>
+        浏览器的这种查找规则：
+    </p>
+    <p>
+        为了尽早过滤掉一些无关的样式规则和元素
+    </p>
+</body>
+</html>

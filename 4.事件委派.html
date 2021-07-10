@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>事件委派</h1>
+    <h3>delegate</h3>
+    <h2>原理</h2>
+    <ul>
+        <li>在一个容器节点上绑定一个事件</li>
+        <li>利用冒泡规则</li>
+        <li>
+            判断该事件是否在与之匹配的指定的选择器上执行
+        </li>
+    </ul>
+    <h2>优点</h2>
+    <ul>
+        <li>容器节点上只能绑定一个事件，一次哦</li>
+        <li>不需要对每一个目标都进行事件绑定</li>
+        <li>对于动态插入的节点也可以进行事件绑定</li>
+        <li>对动态插入的节点生效，无需重新绑定事件</li>
+    </ul>
+</body>
+</html>

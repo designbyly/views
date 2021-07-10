@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createXhr(){
+            if(typeof XMLHttpRequest!=='undefined'){
+                console.log('XMLHttpRequest')
+                return new XMLHttpRequest()
+            }
+           else if(typeof ActiveXObject!=='undefined'){
+               var Juzi=['MSXML.XMLHttp.6.0','MSXML.XMLHttp.3.0','MSXML.XMLHttp']
+               for(var n in Juzi){
+                   try{
+                       var Orange=ActiveXObject(Juzi[n])
+                       console.log('ActiveXObject')
+                       return Orange
+                   }
+                   catch(e){
+                         console.log('打印错误日志'+e)
+                   }
+               }
+           }
+           else{
+               console.log('橘子提醒您，您的电脑不支持Ajax')
+           }
+        }
+        createXhr()
+    </script>
+</body>
+</html>

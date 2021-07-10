@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>浏览器渲染原理</h1>
+    <ol>
+        <li>
+            浏览器在接收到服务器返回的html页面之后
+        </li>
+        <li>
+            浏览器开始构建DOM树（DOM TREE），遇到CSS样式会构建CSS规则树（CSS RULE TREE）
+        </li>
+        <li>
+            遇到JavaScript会通过DOM API和CSS DOM API 来操作DOM TREE和CSS RULE TREE
+        </li>
+        <li>
+            解析完成后，浏览器引擎会通过DOM TREE和CSS RULE TREE 来构造Rendering TREE（渲染树）
+        </li>
+        <li>
+            渲染树构建完成之后进行布局处理，换一种说法就是确定每个节点在屏幕上的确切的显示位置
+        </li>
+        <li>
+            最后开始绘制，遍历渲染树，并用UI后端层，绘制出每一个UI节点
+        </li>
+        <li>
+            完成
+        </li>
+    </ol>
+</body>
+</html>

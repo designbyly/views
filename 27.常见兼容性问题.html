@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>常见兼容性问题</h1>
+    <ol>
+        <li>各种浏览器默认的margin，padding值不同。</li>
+        <li>iphone7以下会存在划一下滑不动的情况，所以需要写上-webkit-overflow-scrolling：touch</li>
+        <li>safari时间对象转换，年月日必须要用‘/’new Date（2021/5/22 09:13:24）</li>
+        <li>IE低版本不识别min-height ，使用！import解决</li>
+        <li>
+            IE浏览器给图片加载超链接时，图片会自动加上边框（紫色两像素的边框），解决方案：
+            img（border：none/0）
+        </li>
+        <li>IE9以下的文本输入框不会垂直居中 解决方案：设置line-height属性</li>
+        <li>window event：表示当前的事件对象，IE有这个对象，FF没有，FF通过给事件处理函数传递事件对象 function（e）
+            {
+                e=window.event||e
+            }*
+        </li>
+        <li>
+            input.type IE 只读 FF可读写
+        </li>
+        <li>
+            获取页面内所有元素的一个集合 IE：document.all 非IE： document.getElementTagname("*")
+        </li>
+        <li>
+           DOM2 添加，清除事件（略）
+        </li>
+    </ol>
+</body>
+</html>

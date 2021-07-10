@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>请描述一下cookie，sessionStorage和localStorage的区别？</h1>
+    <h2>sessionStorage</h2>
+    <p>用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也会销毁。</p>
+    <p>因此sessionStroage不是一种持久化的本地存储，仅仅适用于会话级别的存储。</p>
+    <h2>localStorage</h2>
+    <p>用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。</p>
+    <h2>cookie问题</h2>
+    <h3>web storage 和 cookie 的区别</h3>
+    <p>web storage的概念和cookie相似，区别是为了更大容量存储设计的。</p>
+    <p>cookie的大小有一定的限制，并且每次一个新的页面cookie都会被发送过去</p>
+    <p>这样，无形之中就浪费了带宽。</p>
+    <p>cookie1还需要指定作用域，不可以跨域调用。</p>
+    <p></p>
+    <p>setitem，getitem，removeitem，clear等方法，不像cookie需要你自己封装setCookie，getCookie</p>
+    <p>cookie也是不可以或缺的</p>
+    <p>cookie的作用是与服务器进行交互，作为HTTP规范的一部分而存在</p>
+    <p>web Storage 只是为了在本地“存储”数据而产生的。</p>
+</body>
+</html>

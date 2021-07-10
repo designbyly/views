@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>一个页面从输入URL到页面加载显示完成，这个过程都发生了什么？</h1>
+    <ol>
+        <li>查找浏览器缓存</li>
+        <li>DNS解析，查找该域名对应的IP地址，重定向（301），发出第二个GET请求</li>
+        <li>进行HTTP协议会话</li>
+        <li>客户端发送报头（请求报头）</li>
+        <li>服务器回馈报头（响应报头）</li>
+        <li>html文档开始下载</li>
+        <li>文档树建立，根据标记请求所需指定MIME类型的文件</li>
+        <li>文件显示</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>微信JSSDK</h1>
+    <h2>项目使用微信的一些功能，比如：扫一扫，定位，支付，分享等</h2>
+    <p>JSSDK使用流程</p>
+    <ol>
+        <li>
+            将自己项目的域名添加到微信公众账号中，并设置为安全域名
+        </li>
+        <li>
+            在代码中引入JSSDK所需的js文件http://res.wx.qq.com/open/js/jweixin-1.6.0.js
+        </li>
+        <li>
+            进行配置
+        </li>
+        <li>
+            调用JSSDK提供的方法进行调用
+        </li>
+    </ol>
+    <p>
+        配置如下
+    </p>
+    <code>
+        wx.config({
+            debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+            appId: '', // 必填，公众号的唯一标识
+            timestamp: , // 必填，生成签名的时间戳
+            nonceStr: '', // 必填，生成签名的随机串
+            signature: '',// 必填，签名
+            jsApiList: [] // 必填，需要使用的JS接口列表
+          });
+    </code>
+</body>
+</html>

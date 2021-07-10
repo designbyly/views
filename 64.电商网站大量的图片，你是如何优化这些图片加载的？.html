@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>电商网站大量的图片，你是如何优化这些图片加载的？</h1>
+    <ol>
+        <li>图片懒加载：在页面的未可视区可以添加一个滚动条事件，判断图片位置与浏览器顶端的距离与页面的距离，如果前者小于后者，优先加载</li>
+        <li>如果为幻灯片，相册：可以使用图片预加载技术，将当前展示图片的前一张和后一张优先下载。</li>
+        <li>如果为CSS图片：可以使用CSSsprite，SVGsprite，Iconfont，Base64技术</li>
+        <li>如果图片大的不成样子，可以使用特殊编码的图片，加载时会先加载一张压缩的特别厉害的缩略图，以提高用户体验。</li>
+        <li>如果图片展示区域小于图片的真实大小，则应该在服务器根据业务进行图片压缩，图片压缩后大小与展示一致</li>
+        <li>不一一叙述了，太多了，喜欢的记得关注这个UP主，橘子姐独家授权哦</li>
+    </ol>
+</body>
+</html>

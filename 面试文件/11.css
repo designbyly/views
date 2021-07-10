@@ -1,0 +1,21 @@
+table {
+    width: 500px;
+    margin: 100px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td,
+th {
+    border: 1px solid #333;
+}
+
+thead {
+    height: 40px;
+    background-color: darkseagreen;
+}
+
+thead tr {
+    height: 40px;
+    background: #ccc;
+}

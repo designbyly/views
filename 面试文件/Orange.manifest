@@ -1,0 +1,15 @@
+CACHE MANIFEST
+#V5.20
+
+#CACHE   存放文件的地方
+CACHE:
+./Orange.html
+
+#NETWORK 不存放文件的地方
+NETWORK:
+
+#FALLBACK 替换文件
+FALLBACK:
+../8.application cache更新.html ./Orange.html
+
+

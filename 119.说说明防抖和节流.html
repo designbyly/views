@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>请说明防抖和节流</h1>
+    <h2>防抖原理</h2>
+    <p>事件响应函数在一段时间之后才会执行，如果在这段时间之内再次调用，则重新计算执行时间，</p>
+    <p>简单的理解：通过setTimeout的方式，在一定的时间间隔内，将多次触发转变为一次触发</p>
+    <h2>防抖应用场景</h2>
+    <ol>
+        <li>scrool时间滚动触发</li>
+        <li>搜索框输入查询</li>
+        <li>表单验证</li>
+        <li>按钮提交事件</li>
+        <li>浏览器窗口缩放</li>
+    </ol>
+    <h2>节流原理</h2>
+    <p>如果持续触发事件，每隔一段时间，只执行一次操作。</p>
+    <p>简单的理解：减少一段时间之内的事件的触发频率</p>
+<h2>节流应用场景</h2>
+<ol>
+    <li>DOM元素的拖拽实现功能</li>
+    <li>射击类游戏（后面会给大家做）</li>
+    <li>计算鼠标的移动的距离</li>
+    <i>监听scroll滚动事件</i>
+</ol>
+</body>
+</html>

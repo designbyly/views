@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>React生命周期的相关用法</h1>
+    <h2>初始渲染阶段</h2>
+    <ol>
+        <li>
+            componentWillMount:实例挂载之前
+        </li>
+        <li>
+            Render：渲染组件
+        </li>
+        <li>
+            componentDidMount:实例挂载完成，一般在这个函数中与后台进行初始化数据交互
+        </li>
+    </ol>
+    <h2>运行更新阶段</h2>
+    <ol>
+        <li>componentWillReceiveProps:
+            父组件改变时调用
+        </li>
+        <li>shouldComponentUpdate：
+            用来手动阻止渲染
+        </li>
+        <li>
+            componentWillUpdate：组件数据跟新前调用
+        </li>
+        <li>
+            componentDidUpdate：组件数据跟新完成时调用
+        </li>
+    </ol>
+    <h2>销毁阶段</h2>
+    <ol>
+        <li>
+            componentUnmount：用来销毁
+            不用的变量，接解除没有用处的定时器以及解绑没用事件，防止内存泄露。        </li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>虚拟DOM</h1>
+    <p>虚拟DOM就是为了解决浏览器性能问题而被设计出来的</p>
+    举例说明
+    <p>若一次操作中有10次更新DOM的动作，虚拟DOM不会立即操作DOM</p>
+    <p>而是将这10次更新的diff内容保存到本地的一个JS对象中，最终将这个JS对象一次性attch</p>
+    <p>到DOM树上，再进行后续操作</p>
+    <p>避免大量计算量</p>
+    <h2>好处</h2>
+    用JS对象模拟DOM节点，页面的更新可以先全部反应在JS对象中的JS对象映射成真正的DOM，交给浏览器去绘制
+</body>
+</html>

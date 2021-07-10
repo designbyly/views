@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>对比虚拟DOM，与真实DOM</h1>
+    <h2>真实DOM</h2>
+    <ol>
+        <li>更新速度比较缓慢，可以直接更新的是HTML</li>
+        <li>元素如果更新了，就创建新的DOM</li>
+        <li>DOM操作的代价很高</li>
+        <li>对于内存的消耗而言，比较多</li>
+    </ol>
+    <h2>虚拟DOM</h2>
+    <ol>
+        <li>更新速度比较快，无法直接更新HTML</li>
+        <li>元素如果更新了，更新的是JSX</li>
+        <li>DOM操作非常的简单</li>
+        <li>对于内存的消耗而言，比较少</li>
+    </ol>
+</body>
+</html>

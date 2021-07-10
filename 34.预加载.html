@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>预加载</h1>
+    <p>在页面正式显示之前，先把所需要的图片资源全部加载下来，然后再显示界面
+        ，用户就不会看到图片加载的过程了，提高了用户体验
+    </p>
+    <h3>加载原理</h3>
+    <ol>
+        <li>拿到所有图片的地址，分别创建Image对象，并赋值给src</li>
+        <li>在imgObj.onload方法中，判断是否所有图片都已经加载完毕</li>
+        <li>当所有图片加载完毕之后，调用回调函数，处理页面的显示</li>
+    </ol>
+</body>
+</html>

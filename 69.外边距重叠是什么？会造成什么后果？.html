@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #div1{
+        width: 22px;
+        height: 22px;
+        margin: 10px;
+        background-color: aqua;
+        }
+        #div2{
+        width: 22px;
+        height: 22px;
+        margin: 10px;
+        background-color: red;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>外边距重叠会发生什么后果？什么是外边距重叠？</h1>
+    <h2>外边距重叠（margin-collapse）</h2>
+    <p>在CSS中，相邻的两个盒子的外边距可以结合成一个单独的外边距</p>
+    <p>这种合并外边距的方式称作折叠，并且因为其所结合合成的外边距称为折叠外边距</p>
+    <h2>折叠规则的计算规则</h2>
+    <ol>
+        <li>两个相邻的外边距都是正数的时候，折叠结果是他们中较大的那个值</li>
+        <li>两个相邻的外边距都是负数的时候，折叠结果是他们绝对值中较大的那个值</li>
+        <li>两个外边距一正一负的时候，折叠结果是两者相加的和</li>
+    </ol>
+    <div id="div1"></div>
+    <div id="div2"></div>
+</body>
+</html>

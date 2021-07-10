@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>懒加载</h1>
+    <h2>别名：延迟加载</h2>
+    <p>叙述：当图片需要显示到页面上的时候，才开始真正的发起图片的网络请求，否则不请求</p>
+    <h2>原理</h2>
+    <ol>
+        <li>将图片地址不写入src属性，而是写入其他的属性（data-original）中</li>
+        <li>页面onload的时候，根据图片的offsetTop值，判断哪些图片显示在用户视野范围内，然后把
+            这些图片的地址从data-original中取出，放到src属性中，图片会自动请求
+        </li>
+        <li>
+            设置好onscroll函数，监测屏幕的滚动，如果有图片即将进入用户视野，则同样将图片的地址从data-original取出，放到
+            src属性中取出即可
+        </li>
+    </ol>
+</body>
+</html>

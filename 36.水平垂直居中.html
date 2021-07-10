@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>水平垂直居中</h1>
+    <ol>
+        <li>已知宽高，设置position:absolute，然后left，和top都设置为50%，再根据margin的数值来调整</li>
+  <li>
+      类似第一个，最后一步用transfrom
+      ：translate（-50%，-50%）
+  </li>
+   <li>
+       绝对定位，top，bottom，left，right都设置为0，设置好宽度，然后margin：auto；
+   </li>
+   <li>
+       display：table-cell；vertical-align：middle；
+   </li>
+   <li>
+       使用flex弹性盒布局
+   </li>
+    </ol>
+</body>
+</html>

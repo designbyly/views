@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>闭包：</h1>
+    <span>一个概念</span>
+    <p>
+        在一个函数中返回另一个函数，里面的函数就成为了闭包
+    </p>
+    <h1>作用：</h1>
+    <p>
+        闭包限制了一定的作用域，保证变量不被释放掉。
+    </p>
+    <script>
+        var Juzi=(function(){
+            var Orange=0;
+            return function(){
+                return ++Orange;
+            }
+        })()
+           
+            console.log(Juzi());
+            console.log(Juzi());
+            console.log(Juzi());
+    </script>
+</body>
+</html>

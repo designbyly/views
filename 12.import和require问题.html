@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>import和require问题</h1>
+    <p>在node中，最重要的思想就是模块化</p>
+    <p>两者都是被模块化使用</p>
+    <h2>遵循的规范</h2>
+    <ul>
+        <li>
+            require是AMD规范引入方式-------------import是ES6语法的一种
+        </li>
+        <li>import引入要使用必须转换语法，使用babel</li>
+        <li>require是运行时调用，import是编译时调用</li>
+<li>
+    require本质：赋值过程，其结果就是对象，数字，字符串函数等等。
+</li>
+<li>
+    import是解构过程，不清楚现在引擎实现了import，三大库可以。
+</li>
+    </ul>
+</body>
+</html>

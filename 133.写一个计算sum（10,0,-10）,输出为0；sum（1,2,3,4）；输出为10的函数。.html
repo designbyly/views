@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>写一个计算sum（10,0,-10）,输出为0；sum（1,2,3,4）；输出为10的函数。</h1>
+    <script>
+function calculate(){
+    var result=0
+    for(var i=0;i<arguments.length;i++){
+        var obj=arguments[i]
+        result+=obj
+    }
+    return result
+}
+
+console.log(calculate(10,0,-10))
+console.log('===========')
+console.log(calculate(1,2,3,4))
+    </script>
+</body>
+</html>
